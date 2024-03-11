@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta  charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="styles.css"/>
+
+<title>Clock</title>
+</head>
+<body>
+  <div class="clock" id="clock1">
+    <div class="hand hour" id="hour" data-hand-hour></div>
+    <div class="hand min" id="min" data-hand-min></div>
+    <div class="hand sec" id="sec" data-hand-sec></div>
+     <div class="day" id="day" data-day></div>
+     <div class="timezone">
+      <select id="timeZone1" name="Time-Zone" onchange="updateClock('clock1',this.value)">
+        <option value="0">Chose a Zone</option>
+        <option value="-8">Dampier / Barrow Island, Australia</option>
+        <option value="-9.5">Darwin, Australia</option>
+        <option value="-3">Greece</option>
+        <option value="-2">Croatia</option>
+        <option value="-2">France</option>
+        <option value="-1">Gibraltar</option>
+        <option value="-2">Egypt</option>
+        <option value="-2">South Africa</option>
+        <option value="-5,5">India</option>
+        <option value="-8">China</option>
+        <option value="-9">South Korea</option>
+        <option value="-9">Japan</option>
+        <option value="-8">Singapore</option>
+        <option value="6">Houston(Texas)</option>
+      </select>
+    </div>
+    <div class="number number1">1</div>
+    <div class="number number2">2</div>
+    <div class="number number3">3</div>
+    <div class="number number4">4</div>
+    <div class="number number5">5</div>
+    <div class="number number6">6</div>
+    <div class="number number7">7</div>
+    <div class="number number8">8</div>
+    <div class="number number9">9</div>
+    <div class="number number10">10</div>
+    <div class="number number11">11</div>
+    <div class="number number12">12</div>
+  </div>
+
+  <div class="clock" id="clock2">
+    <div class="hand hour" id="hour" data-hand-hour></div>
+    <div class="hand min" id="min" data-hand-min></div>
+    <div class="hand sec" id="sec" data-hand-sec></div>
+     <div class="day" id="day" data-day></div>
+     <div class="timezone">
+      <select id="timeZone2" name="Time-Zone" onchange="updateClock('clock2',this.value)">
+        <option value="0">Chose a Zone</option>
+        <option value="-8">Dampier / Barrow Island, Australia</option>
+        <option value="-9.5">Darwin, Australia</option>
+        <option value="-3">Greece</option>
+        <option value="-2">Croatia</option>
+        <option value="-2">France</option>
+        <option value="-1">Gibraltar</option>
+        <option value="-2">South Africa</option>
+        <option value="-2">Egypt</option>
+        <option value="-5,5">India</option>
+        <option value="-8">China</option>
+        <option value="-9">South Korea</option>
+        <option value="-9">Japan</option>
+        <option value="-8">Singapore</option>
+        <option value="6">Houston(Texas)</option>
+      </select>
+    </div>
+    <div class="number number1">1</div>
+    <div class="number number2">2</div>
+    <div class="number number3">3</div>
+    <div class="number number4">4</div>
+    <div class="number number5">5</div>
+    <div class="number number6">6</div>
+    <div class="number number7">7</div>
+    <div class="number number8">8</div>
+    <div class="number number9">9</div>
+    <div class="number number10">10</div>
+    <div class="number number11">11</div>
+    <div class="number number12">12</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
